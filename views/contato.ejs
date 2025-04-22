@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+   
+<section class="min-h-screen bg-gradient-to-b from-black via-purple-900 to-black text-white px-6 py-16">
+  <div class="max-w-4xl mx-auto animate__animated animate__fadeInUp">
+    <h1 class="text-4xl font-bold mb-4">Entre em Contato</h1>
+    <p class="text-gray-300 mb-10 max-w-xl">
+      Se você quiser conversar sobre oportunidades, projetos ou simplesmente bater um papo sobre tecnologia, é só me chamar! 💬
+    </p>
+
+    <ul class="text-gray-300 space-y-2 mb-10 ">
+      <li><strong>Email:</strong> juliasantiago.dev@gmail.com</li>
+      <li><strong>Telefone:</strong> (12) 98878-9696</li>
+      <li><strong>Cidade:</strong> São José dos Campos - SP</li>
+    </ul>
+
+    
+    <!-- Redes Sociais -->
+    <div class="flex space-x-6 mb-12 ">
+        
+        <div class="flex justify-center space-x-8">
+          <a href="https://github.com/juliasantiaggo" target="_blank" class="text-white hover:text-violet-400 transition transform hover:scale-125">
+            <i class="fab fa-github text-4xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/juliacoelhosantiago/" target="_blank" class="text-white hover:text-blue-400 transition transform hover:scale-125">
+            <i class="fab fa-linkedin text-4xl"></i>
+          </a>
+          <a href="https://instagram.com/juliasantiaggo" target="_blank" class="text-white hover:text-pink-400 transition transform hover:scale-125">
+            <i class="fab fa-instagram text-4xl"></i>
+          </a>
+          <a href="mailto:juliasantiago.dev@gmail.com" class="text-white hover:text-gray-400 transition transform hover:scale-125">
+            <i class="fas fa-envelope fa-2x mt-1"></i>
+          </a>
+          <a href="https://wa.link/97a8bg" target="_blank" class="flex items-center gap-2 text-green-500 transition transform hover:scale-125 text-4xl">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      
+    <form action="/enviar-contato" method="POST" class="space-y-4">
+      <input type="text" name="nome" placeholder="Seu nome" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-blue-500">
+      <input type="email" name="email" placeholder="Seu e-mail" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-blue-500">
+      <textarea name="mensagem" placeholder="Sua mensagem" rows="5" required class="w-full p-3 rounded bg-gray-800 text-white border border-gray-600 focus:outline-none focus:border-blue-500"></textarea>
+      <button type="submit" class="bg-transparent border-2 border-white text-white text-lg py-3 px-10 rounded-xl hover:bg-violet-600 transition-all duration-300 transform hover:scale-110">
+        Enviar
+      </button>
+    </form>
+    
+  </div>
+
+</section>
+<%- include('partials/footer') %>

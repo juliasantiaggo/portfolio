@@ -1,0 +1,20 @@
+{
+    "name": "portfolio",
+    "version": "1.0.0",
+    "description": "Academic Portfolio using Node.js, Express and EJS",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "dependencies": {
+        "body-parser": "^2.2.0",
+        "ejs": "^3.1.9",
+        "express": "^4.18.2",
+        "nodemailer": "^6.10.1",
+        "portfolio": "file:"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.1"
+    }
+}
